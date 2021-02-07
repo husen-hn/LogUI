@@ -7,12 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--    UI Login-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="UI Login"
+        android:text="@string/ui_login"
         android:textColor="#3F51B5"
         android:textSize="42sp"
         android:textStyle="bold"
@@ -20,6 +21,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--    gradient box-->
     <View
         android:id="@+id/view"
         android:layout_width="210dp"
@@ -41,15 +43,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view">
 
+<!--        register btn-->
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            app:backgroundTint="@null"
             android:background="@drawable/btn_top"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:text="Register"
+            android:text="@string/register"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
@@ -58,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="LOGIN"
+            android:text="@string/login_upper_case"
             android:textColor="#1533A4"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -81,51 +85,56 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <!--            input text field-->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
-                app:startIconDrawable="@drawable/ic_email">
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="none"
+                app:startIconDrawable="@drawable/ic_email"
+                android:drawablePadding="6dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="6dp"
-                    android:hint="Email"
+                    android:id="@+id/inputEditText1"
+                    android:hint="@string/email"
                     android:inputType="textEmailAddress"
                     android:paddingStart="6dp"
-                    android:paddingEnd="6dp" />
+                    android:paddingEnd="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!--            input text field-->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:boxStrokeColor="#FFFFFF"
-                app:startIconDrawable="@drawable/ic_lock">
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="none"
+                android:paddingBottom="30dp"
+                app:startIconDrawable="@drawable/ic_lock"
+                android:drawablePadding="6dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="36dp"
-                    android:drawableStart="@drawable/ic_lock"
-                    android:drawablePadding="6dp"
-                    android:hint="Password"
-                    android:inputType="textPassword"
+                    android:id="@+id/inputEditText2"
+                    android:hint="@string/password"
+                    android:inputType="textEmailAddress"
                     android:paddingStart="6dp"
-                    android:paddingEnd="6dp" />
+                    android:paddingEnd="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
+<!--    Login btn-->
     <Button
         android:id="@+id/button"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        app:backgroundTint="@null"
         android:background="@drawable/login_btn_bg"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
