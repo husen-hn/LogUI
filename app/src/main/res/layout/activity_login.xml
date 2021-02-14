@@ -109,20 +109,21 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:boxBackgroundMode="none"
+                android:drawablePadding="6dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="35dp"
-                app:startIconDrawable="@drawable/ic_lock"
-                android:drawablePadding="6dp"
-                app:hintEnabled="false">
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/ic_lock">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputEditText2"
-                    android:hint="@string/password"
-                    android:padding="10dp"
-                    android:inputType="textEmailAddress"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>

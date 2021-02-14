@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
-
     <!--    UI Register-->
     <TextView
         android:id="@+id/textView"
@@ -49,6 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
+            android:layout_alignParentStart="true"
             android:background="@drawable/btn_top"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
@@ -60,10 +60,8 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="13dp"
+            android:layout_marginTop="12dp"
             android:text="@string/register_upper_case"
             android:textColor="#1533A4"
             android:textSize="18sp"
@@ -132,27 +130,28 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:boxBackgroundMode="none"
+                android:drawablePadding="6dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="35dp"
-                app:startIconDrawable="@drawable/ic_lock"
-                android:drawablePadding="6dp"
-                app:hintEnabled="false">
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/ic_lock">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputEditText2"
-                    android:hint="@string/password"
-                    android:padding="10dp"
-                    android:inputType="textEmailAddress"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <!--    Login btn-->
+    <!--    Register btn-->
     <Button
         android:id="@+id/button"
         android:layout_width="180dp"
