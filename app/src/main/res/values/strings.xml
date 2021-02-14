@@ -6,4 +6,6 @@
     <string name="login_upper_case">LOGIN</string>
     <string name="register">Register</string>
     <string name="ui_login">UI Login</string>
+    <string name="register_upper_case">REGISTER</string>
+    <string name="name">Name</string>
 </resources>
