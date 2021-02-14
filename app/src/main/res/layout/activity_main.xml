@@ -90,15 +90,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:boxBackgroundMode="none"
-                app:startIconDrawable="@drawable/ic_email"
-                android:drawablePadding="6dp">
+                android:paddingTop="20dp"
+                app:startIconDrawable="@drawable/ic_mail"
+                android:drawablePadding="6dp"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputEditText1"
                     android:hint="@string/email"
+                    android:padding="10dp"
                     android:inputType="textEmailAddress"
-                    android:paddingStart="6dp"
-                    android:paddingEnd="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -109,16 +110,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:boxBackgroundMode="none"
-                android:paddingBottom="30dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="35dp"
                 app:startIconDrawable="@drawable/ic_lock"
-                android:drawablePadding="6dp">
+                android:drawablePadding="6dp"
+                app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputEditText2"
                     android:hint="@string/password"
+                    android:padding="10dp"
                     android:inputType="textEmailAddress"
-                    android:paddingStart="6dp"
-                    android:paddingEnd="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
