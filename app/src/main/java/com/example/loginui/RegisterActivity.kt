@@ -13,7 +13,7 @@ class RegisterActivity : AppCompatActivity() {
         val loginBtn = findViewById<Button>(R.id.btn_login_in_regist)
 
         loginBtn.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
         }
     }
