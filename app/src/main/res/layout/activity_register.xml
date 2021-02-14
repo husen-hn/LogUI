@@ -44,15 +44,15 @@
 
         <!--        login btn-->
         <Button
-            android:id="@+id/buttn2"
+            android:id="@+id/btn_login_in_regist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="0dp"
             android:layout_alignParentStart="true"
             android:background="@drawable/btn_top"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:text="@string/login_upper_case"
+            android:textColor="@android:color/white"
             android:textSize="18sp"
             app:backgroundTint="@null" />
 
@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="12dp"
+            android:layout_centerVertical="true"
             android:text="@string/register_upper_case"
             android:textColor="#1533A4"
             android:textSize="18sp"
